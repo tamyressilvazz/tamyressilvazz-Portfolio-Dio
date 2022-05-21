@@ -5,7 +5,7 @@
             color: #fff;
             font-family: 'Lobster Two', sans-serif;
         }
-        
+
         .header-wrapper {
             height: 100vh;
             width: 100vw;
@@ -18,22 +18,22 @@
             position: relative;
             animation: backgroundTransition 8s ease-in-out infinite;
         }
-        
+
         h1 {
             text-transform: capitalize;
             letter-spacing: 4px;
         }
-        
+
         h2 {
             text-transform: capitalize;
             letter-spacing: 4px;
         }
-        
+
         .social-media {
             margin-top: 1rem;
             display: flex;
         }
-        
+
         .social-media a {
             text-decoration: none;
             color: #fff;
@@ -44,15 +44,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: 52s cubic-bezier(0.55, 0.025, 0.675, 0.85);
+            transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.85);
         }
-        
+
         a:hover {
             color: #DDA0DD;
             background-color: #FFC0CB;
             border-radius: 26px;
         }
-        
+
         @keyframes backgroundTransition {
             0% {
                 background-position: 0% 80%;
@@ -64,13 +64,13 @@
                 background-position: 0% 90%;
             }
         }
-        
+
         .checkbox-container {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
+
         .checkbox {
             height: 100px;
             width: 100px;
@@ -82,7 +82,7 @@
             z-index: 9999;
             transition: 400ms ease-in-out 0s;
         }
-        
+
         .checkbox .trace {
             width: 50px;
             height: 2px;
@@ -91,41 +91,41 @@
             border-radius: 4px;
             transition: 0.5s ease-in-out;
         }
-        
+
         .checkbox .trace:nth-child(1) {
             top: 26px;
             transform: rotate(0);
         }
-        
+
         .checkbox .trace:nth-child(2) {
             top: 46px;
             transform: rotate(0);
         }
-        
+
         .checkbox .trace:nth-child(3) {
             top: 66px;
             transform: rotate(0);
         }
-        
+
         .checkbox .trace:nth-child(1) {
             top: 26px;
             transform: rotate(0);
         }
-        
+
         .checkbox .trace:nth-child(2) {
             top: 46px;
             transform: rotate(0);
         }
-        
+
         .checkbox .trace:nth-child(3) {
             top: 66px;
             transform: rotate(0);
         }
-        
+
         #toggle {
             display: none;
         }
-        
+
         .menu {
             position: absolute;
             top: 28px;
@@ -139,7 +139,7 @@
             z-index: -1;
             transition: 400ms ease-in-out 0s;
         }
-        
+
         .menu-items {
             position: fixed;
             top: 0;
@@ -154,11 +154,11 @@
             visibility: hidden;
             transition: 400ms ease-in-out 0s;
         }
-        
+
         .menu-items ul {
             list-style-type: none;
         }
-        
+
         .menu-items ul li a {
             margin: 10px 0;
             color: #DA70D6;
@@ -167,40 +167,40 @@
             letter-spacing: 4px;
             font-size: 40px;
         }
-        
+
         #toggle:checked+.checkbox .trace:nth-child(1) {
             transform: rotate(45deg);
             background-color: #DA70D6;
             top: 47px;
         }
-        
+
         #toggle:checked+.checkbox .trace:nth-child(2) {
             transform: rotate(-100px);
             width: 30px;
             visibility: hidden;
             opacity: 0;
         }
-        
+
         #toggle:checked+.checkbox .trace:nth-child(3) {
             transform: rotate(-45deg);
             background-color: #DA70D6;
             top: 47px;
         }
-        
+
         #toggle:checked+.checkbox {
             background-color: none;
         }
-        
+
         #toggle:checked~.menu {
             box-shadow: 0px 0px 0px 100vmax #fff;
             z-index: 1;
         }
-        
+
         #toggle:checked~.menu-items {
             visibility: visible;
             opacity: 1;
         }
-        
+
         .container {
             width: 100%;
             height: auto;
@@ -210,14 +210,14 @@
             align-items: center;
             margin: 3rem 0;
         }
-        
+
         .card-container {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             width: 90%;
         }
-        
+
         .card {
             height: 300px;
             width: 400px;
@@ -234,14 +234,14 @@
             cursor: pointer;
             transition: 0.3s;
         }
-        
+
         .card-text {
             width: 40%;
             font-family: sans-serif;
             letter-spacing: 1px;
             color: rgb(109, 109, 109);
         }
-        
+
         .card-wrapper::before {
             content: '';
             position: absolute;
@@ -252,7 +252,7 @@
             opacity: 0;
             transition: 0.3s;
         }
-        
+
         .card-wrapper h2 {
             font-size: 40px;
             text-transform: capitalize;
@@ -260,7 +260,7 @@
             margin: 0;
             transition: 0.3s;
         }
-        
+
         .card-wrapper p {
             font-size: 0;
             visibility: hidden;
@@ -269,17 +269,17 @@
             text-transform: capitalize;
             transition: 0.3s;
         }
-        
+
         .card:hover {
             filter: unset;
         }
-        
+
         .card:hover>.card-wrapper::before {
             opacity: 1;
             width: 350px;
             height: 250px;
         }
-        
+
         .footer {
             height: 100px;
             width: 100%;
@@ -288,7 +288,7 @@
             align-items: center;
             background-color: #DA70D6;
         }
-        
+
         @media (max-width: 880px) {
             .social-media {
                 display: flex;
