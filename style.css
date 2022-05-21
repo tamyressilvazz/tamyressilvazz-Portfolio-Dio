@@ -316,4 +316,12 @@
                 height: 190px;
                 width: 190px;
             }
+            .menu-items ul li a {
+                margin: 10px 0;
+                color: #DA70D6;
+                text-decoration: none;
+                text-transform: capitalize;
+                letter-spacing: 4px;
+                font-size: 40px;
+            }
         }
